@@ -5,8 +5,7 @@
    ### Backend-Server A:  
    	Received MAP_ID and start vertex from AWS by using UDP.  
    	Read a map.txt which storing the distance information of the city, propagation speed and transmission speed.  
-   	Found out the target MAP_ID, number of vertices and number of edges.find out the target MAP_ID, number of vertices and number of 
-   edges.  
+   	Found out the target MAP_ID, number of vertices and number of edges.find out the target MAP_ID, number of vertices and number of edges.  
 	Used Dijkstra Algorithm to find the shortest path from an assigned vertex and print the minimum length of the each destination out.
 	Sent the result, propagation and transmission speed back to AWS.
    ### Backend-Server B: 
@@ -18,7 +17,7 @@
 	Sent Map_ID and start vertex to server A; received the result from serverA by using UDP.
 	Sent File_Size, propagation speed and transmission speed to server B; received the result from server B by using UDP.
 	Sent the total result back to client by using TCP.
-   *Client:
+   ### Client:
 	Sent MAP_ID, start vertex and File_Size to AWS; Received the result from AWS by using TCP.
 	
 ## b. The format of all the messages exchanged
