@@ -1,24 +1,24 @@
 # Socket-Programing
 
-
+I, II, III, IV, V, VI,
 ## a. What your code files are and what each one of them does?  
    ### Backend-Server A:  
-   	Received MAP_ID and start vertex from AWS by using UDP.  
-   	Read a map.txt which storing the distance information of the city, propagation speed and transmission speed.  
-   	Found out the target MAP_ID, number of vertices and number of edges.find out the target MAP_ID, number of vertices and number of edges.  
-	Used Dijkstra Algorithm to find the shortest path from an assigned vertex and print the minimum length of the each destination out.
-	Sent the result, propagation and transmission speed back to AWS.
+   	I. Received MAP_ID and start vertex from AWS by using UDP.  
+   	II. Read a map.txt which storing the distance information of the city, propagation speed and transmission speed.  
+   	III. Found out the target MAP_ID, number of vertices and number of edges.find out the target MAP_ID, number of vertices and number of edges.  
+	IV. Used Dijkstra Algorithm to find the shortest path from an assigned vertex and print the minimum length of the each destination out.
+	V. Sent the result, propagation and transmission speed back to AWS.
    ### Backend-Server B: 
-	Received the propagation speed, transmission speed, File_Size and minimum length of each destination from AWS by using UDP.
-	Calculated Tt, Tp and End-to-End delay of each destination from start vertex.
-	Sent the result back to AWS. 
+	I. Received the propagation speed, transmission speed, File_Size and minimum length of each destination from AWS by using UDP.
+	II. Calculated Tt, Tp and End-to-End delay of each destination from start vertex.
+	III. Sent the result back to AWS. 
    ### AWS:
-	Recevied MAP_ID, start vertex and File_size from client by using TCP.
-	Sent Map_ID and start vertex to server A; received the result from serverA by using UDP.
-	Sent File_Size, propagation speed and transmission speed to server B; received the result from server B by using UDP.
-	Sent the total result back to client by using TCP.
+	I. Recevied MAP_ID, start vertex and File_size from client by using TCP.
+	II. Sent Map_ID and start vertex to server A; received the result from serverA by using UDP.
+	III. Sent File_Size, propagation speed and transmission speed to server B; received the result from server B by using UDP.
+	IV. Sent the total result back to client by using TCP.
    ### Client:
-	Sent MAP_ID, start vertex and File_Size to AWS; Received the result from AWS by using TCP.
+	I. Sent MAP_ID, start vertex and File_Size to AWS; Received the result from AWS by using TCP.
 	
 ## b. The format of all the messages exchanged
    ### Backend-Server A:
