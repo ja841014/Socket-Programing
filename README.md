@@ -1,6 +1,5 @@
 # Socket-Programing
 
-I, II, III, IV, V, VI,
 ## a. What your code files are and what each one of them does?  
    ### Backend-Server A:  
    	I. Received MAP_ID and start vertex from AWS by using UDP.  
